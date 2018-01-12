@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CRUD HTML</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-7">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th colspan="2">Estudios a convalidar</th>
+              <th colspan="2">Estudios aportados</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <th>Ciclo</th>
+              <th>Modulo</th>
+              <th>Ciclo</th>
+              <th>Modulo</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="tbody-tabla-convalidaciones"></tbody>
+        </table>
+      </div>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-4">
+        <form id="form-convalidaciones">
+          <div class="form-group">
+            <label for="modulo-a-convalidar">Módulo a convalidar</label>
+            <input id="modulo-a-convalidar" class="form-control" type="text" name="moduloAConvalidar" value="">
+          </div>
+          <div class="form-group">
+            <label for="ciclo-a-convalidar">Ciclo a Convalidar</label>
+            <input id="ciclo-a-convalidar" class="form-control" type="text" name="cicloAConvalidar" value="">
+          </div>
+          <div class="form-group">
+            <label for="modulo-aportado">Módulo Aportado</label>
+            <input id="modulo-aportado" class="form-control" type="text" name="moduloAportado" value="">
+          </div>
+          <div class="form-group">
+            <label for="ciclo-aportado">Ciclo Aportado</label>
+            <input id="ciclo-aportado" class="form-control" type="text" name="cicloAportado" value="">
+          </div>
+          <input id="boton-enviar-convalidacion" type="submit" value="Crear Convalidación">
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

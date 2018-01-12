@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.borrar, .editar {
+  padding: 0;
+}
+
+.borrar > span, .editar > span {
+  padding: 12px;
+}
